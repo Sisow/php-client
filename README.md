@@ -19,16 +19,14 @@ PHP cURL extension installed
 
 Installing this package can easily by composer.
 
-You can add the package in composer.json
-
 ```
-Give the example
-```
+$ composer require sisow/php-client:^1.0
 
-Or run the command below
-
-```
-until finished
+{
+    "require": {
+        "sisow/php-client": "^2.0"
+    }
+}
 ```
 
 ## Getting started
