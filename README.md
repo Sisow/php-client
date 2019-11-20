@@ -24,7 +24,7 @@ $ composer require sisow/php-client:^1.0
 
 {
     "require": {
-        "sisow/php-client": "^2.0"
+        "sisow/php-client": "^1.0"
     }
 }
 ```
