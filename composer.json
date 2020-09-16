@@ -5,7 +5,7 @@
   "keywords": ["sisow","payment","iDEAL", "Bancontact", "Mastercard", "VISA","Creditcard", "PayPal", "EPS", "Giropay", "Sofort", "Klarna", "Afterpay"],
   "homepage": "https://www.sisow.nl",
   "license": "MIT",
-  "version": "1.0.0",
+  "version": "1.0.2",
   "require": {
     "php": ">=7.0.7",
     "ext-curl": "*",
