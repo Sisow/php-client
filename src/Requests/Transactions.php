@@ -100,11 +100,17 @@ class Transactions extends AbstractRequest
         }
 
         // generate result
-        $transactionResponse = $this->get($trxId);
-        $transactionResponse->documentId = $documentId;
-        $transactionResponse->documentURL = $documentUrl;
-        $transactionResponse->issuerUrl = urldecode($issuerUrl);
-        $transactionResponse->invoiceNo = $invoiceNo;
+	    $transactionResponse = new Transaction();
+
+        if ($trxId)
+        {
+	        $transactionResponse = $this->get($trxId);
+        }
+
+	    $transactionResponse->documentId  = $documentId;
+	    $transactionResponse->documentURL = $documentUrl;
+	    $transactionResponse->issuerUrl   = urldecode($issuerUrl);
+	    $transactionResponse->invoiceNo   = $invoiceNo;
 
         // return result
         return $transactionResponse;
